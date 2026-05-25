@@ -6,7 +6,9 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 app.use(cors({
-  origin: ['http://localhost:5173',],
+  origin: ['http://localhost:5173',
+    'https://nexamart-jade.vercel.app/'
+  ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   credentials: true,
    allowedHeaders: ["Content-Type", "Authorization"],
