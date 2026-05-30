@@ -7,7 +7,7 @@ const cors = require("cors");
 
 app.use(cors({
   origin: ['http://localhost:5173',
-    'https://nexamart-jade.vercel.app/'
+    'https://nexamart-jade.vercel.app'
   ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   credentials: true,
