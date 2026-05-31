@@ -15,8 +15,6 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
   });
 }
 
-// connect db
-connectDatabase();
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_NAME,
@@ -30,6 +28,8 @@ const server = app.listen(process.env.PORT, () => {
   console.log(
     `Server is running on http://localhost:${process.env.PORT}`
   );
+  // connect db
+  connectDatabase();
 });
 
 // unhandled promise rejection
